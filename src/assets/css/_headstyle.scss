@@ -1,0 +1,24 @@
+.header {
+    // position: fixed;
+}
+.hdWrap {
+    max-width: 1296px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    li {
+        font-family: 'Nanum Gothic';
+    }    
+}
+
+.nav {
+    display: flex;
+    gap: 28px;
+    li {
+        font-weight: 400;
+    }
+}
+
+.navUtil {
+    display: flex;
+}
