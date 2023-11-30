@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+$primary:rgba(255,255,255,.9);
+$font-family: 'Nanum Gothic';
+
+// 너비
+$w100 : 1296px;
+$w50 : 648px;
+
+// Banner title
+.title {
+  font-family: 32px;
+  font-weight: 700;
+  line-height: 46px;
+}
+
+// Card font 
+.card {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+// Footer
+.footer-font{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+// font color
+$f-black: #000;
+$f-gray:#666;
+$f-white: #fff;
+
+// 배경색
+$bg-black: #333;
+$bg-yellow: #FEE102;
+$bg-yellow2: #FAE100;
+$bg-blue: #3c64ff;
+
+* {
+    background: $primary;
+    color: $f-black;
+    font-family: $font-family;
+  }
+
