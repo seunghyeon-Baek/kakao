@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
       <div className=''>
-        테스트 - 승현 - 수정
+        백승현입니다.
       </div>
   );
 }
