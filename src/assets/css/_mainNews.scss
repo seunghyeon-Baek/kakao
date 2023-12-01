@@ -1,0 +1,107 @@
+.section_home {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.inner_item {
+    position: relative;
+    height: 1616.86px;
+    transition-duration: .5s;
+}
+.wrap_item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    max-width: 666px;
+    padding: 0 18px;
+    box-sizing: border-box;
+    .item_card.card_half .wrap_cont {
+        height: 192px;
+        outline-offset: -2px;
+    }
+    .item_card {
+        overflow: hidden;
+        width: 297px;
+        margin-top: 36px;
+        border-radius: 14px;
+        background-color: var(--colorBg10);
+        box-shadow: 4px 12px 30px 6px rgba(0,0,0,.09);
+        .wrap_cont {
+            display: block;
+            position: relative;
+            padding: 25px 24px 0;
+            box-sizing: border-box;
+            .link_item {
+                display: block;
+                margin: 0 -24px;
+                outline-offset: -1px;
+            }
+        }
+        .info_cate {
+            display: block;
+            height: 36px;
+            margin-top: -1px;
+            padding-right: 20px;
+            font-size: 0;
+            .txt_cate{
+                display: inline-block;
+                position: relative;
+                height: 34px;
+                margin-top: 1px;
+                padding: 0 13px;
+                border-radius: 13px;
+                font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+                font-size: 13px;
+                line-height: 34px;
+                color: var(--baseForeground);
+                background-color: var(--colorBg5);
+                vertical-align: top;
+            }
+            .ico_cate {
+                display: inline-block;
+                margin-right: 8px;
+                vertical-align: top;
+            }
+        }
+        .tit_card {
+            display: block;
+            display: -webkit-box;
+            overflow: hidden;
+            height: 64px;
+            margin-top: 13px;
+            padding: 0 24px;
+            font-family: KakaoBig,Apple SD Gothic Neo,Malgun Gothic,맑은 고딕,sans-serif;
+            font-size: 22px;
+            line-height: 32px;
+            color: #000;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        .wrap_thumb {
+            display: block;
+            height: 166px;
+            margin-top: 60px;
+            .thumb_img {
+                display: block;
+                width: 100%;
+                min-height: 100%;
+            }
+        }
+        .info_card {
+            overflow: hidden;
+            position: absolute;
+            top: 143px;
+            left: 0;
+            right: 84px;
+            height: 19px;
+            margin-top: 18px;
+            padding-left: 24px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 19px;
+            color: #666;
+        }       
+    }
+}
