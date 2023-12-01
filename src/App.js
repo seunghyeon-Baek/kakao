@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './assets/css/common.scss'
 import './App.css';
-import MainTop from './Components/Main/MainTop';
 
+import MainTop from './Components/Main/MainTop';
 
 function App() {
   return (
@@ -10,6 +10,9 @@ function App() {
         // 백승현입니다.
         <MainTop />
       // </div>
+import Header from './Components/Header/Header'
+
+      <Header/>
 
   );
 }
