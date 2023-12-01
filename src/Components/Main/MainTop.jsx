@@ -5,7 +5,7 @@ import { BsThreeDotsVertical } from "react-icons/bs"; // icon
 
 function MainTop() {
   return (
-    <div className="main">
+    <div className="main" id="hyeon">
       <div className='title'>
         <div className='title_date'>
           <div className='text' >
