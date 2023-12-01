@@ -6,11 +6,10 @@ import MainTop from './Components/Main/MainTop';
 
 function App() {
   return (
-      // <div className=''>
+      <div className=''>
         <Header/>
-        // 백승현입니다.
         <MainTop />
-      // </div>
+      </div>
 
 
       
