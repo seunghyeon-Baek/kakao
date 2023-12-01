@@ -1,8 +1,127 @@
 // 승효
 @import './common.scss';
 
-.cotent{
-    background: red;
+*{
+    background: $primary;
+    color: $f-black;
+    font-family: $font-family;
+}
+
+.main{
     width: $w100;
     margin: 0 auto;
+}
+
+.title_date{
+    margin: 30px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+}
+
+.contentP>p{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 52px;
+    text-decoration: none solid rgb(0, 0, 0);
+    word-spacing: 0px;
+}
+
+.item_card{
+    position: relative;
+    width: $w50;
+    overflow: hidden;
+    position: relative;
+    border-radius: 14px;
+    background-color: #fff;
+    box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
+    height: 500px; // 나중에 삭제
+    
+}
+
+.info_cate{
+    // background: skyblue;
+    display: block;
+    height: 36px;
+    margin-top: -1px;
+    padding-right: 20px;
+    height: 100px; // 나중에 삭제
+}
+  
+.checkIcon{
+    text-decoration: none solid rgb(51, 51, 51);
+    width: 36px;
+    height: 36px;
+}
+
+.info_cate{
+    display: flex;
+    align-items: center;
+    padding: 25px 24px 0;
+}
+
+.txt_cate{
+    display: inline-block;
+    position: relative;
+    margin-top: 1px;
+    border-radius: 13px;
+    background: none;
+    font-size: 13px;
+    text-decoration: none solid rgb(0, 0, 0);
+    vertical-align: text-top;
+    word-spacing: 0px;
+}
+
+/* 말풍선 */
+.balloon {
+    position: relative;
+    background-color: #EEEEEE;
+    border-radius: 13px;
+    padding: 10px;
+    margin: 10px 10px 0 10px;
+    max-width: 200px; 
+  }
+  
+  .icon-container{
+    margin-left: auto;
+    color: red;
+  }
+
+.tit_card {
+    max-height: 92px;
+    height: 92px;
+    margin-top: 13px;
+    padding: 0 24px 0 24px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: -1px;
+}
+
+.info_card_tag {
+    margin-top: 24px;
+    // margin-bottom: 3px;
+    padding: 0 24px 0 24px;
+}
+
+.tag{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    margin: 0 3px 0 0;
+    text-decoration: none solid rgb(102, 102, 102);
+    color: #666666;
+}
+
+.cardImg{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    margin-top: 20px;
+    object-fit: cover; 
+    // border-radius: 14px; 
 }
