@@ -1,129 +1,317 @@
 // 승효
 @import './common.scss';
 
-*{
-    background: $primary;
-    color: $f-black;
-    font-family: $font-family;
-}
+// *{
+//     background: $primary;
+//     color: $f-black;
+//     font-family: $font-family;
+// }
 
 #hyeon {
-.main{
-    width: $w100;
-    margin: 0 auto;
-}
 
-.title_date{
-    margin: 30px;
-}
+    &.main{
+        width: $w100;
+        margin: 0 auto;
+    }
 
-.text{
-    display: flex;
-    align-items: center;
-}
+    .title_date{
+        margin-top: 30px;
+    }
 
-.contentP>p{
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    line-height: 52px;
-    text-decoration: none solid rgb(0, 0, 0);
-    word-spacing: 0px;
-}
+    .text{
+        display: flex;
+        align-items: center;
+    }
 
+    .emph_tit {
+        p {
+          display: block;
+          font-size: 46px;
+          font-weight: 700;
+          line-height: 66px;
+        }
+      }
+
+    .cont_home {
+        margin: 0 -18px;
+        padding: 60px 0 0;
+    }
+
+    .section_home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .wrap_item{
+    -webkit-box-flex: 1;
+    flex: 1;
+    position: relative;
+    min-width: 630px;
+    padding: 0 18px;
+    box-sizing: border-box;
+    
+  }
+
+#big{
 .item_card{
     position: relative;
-    width: $w50;
+    width: 630px;
     overflow: hidden;
-    position: relative;
     border-radius: 14px;
     background-color: #fff;
     box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
-    height: 500px; // 나중에 삭제
-    
+        
+        &.wrap_cont {
+            display: block;
+            position: relative;
+            padding: 25px 24px 0;
+            box-sizing: border-box;
+        }
+    }
+
+    .icon-container {
+        margin-left: auto;
+        height: 100%;  
+        
+        &.icon-container{
+            width: 40px; /* 적절한 너비 설정 */
+            height: 40px; /* 적절한 높이 설정 */
+        }
+    }
+
+    .tit_card {
+        max-height: 92px;
+        height: 92px;
+        margin-top: 13px;
+        padding: 0 24px 0 24px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 46px;
+        letter-spacing: -1px;
+    }
+
+    .info_card{
+        top: 162px;
+        margin-top: 24px;
+        font-size: 14px;
+    }
+
+    .info_card_tag {
+        margin-top: 24px;
+        padding: 0 24px 0 24px;
+    }
+
+    .tag{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 19px;
+        margin: 0 3px 0 0;
+        text-decoration: none solid rgb(102, 102, 102);
+        color: #666666;
+    }
+
+    .cardImg{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        object-fit: cover; 
+    }
 }
 
-.info_cate{
-    // background: skyblue;
-    display: block;
-    height: 36px;
-    margin-top: -1px;
-    padding-right: 20px;
-    height: 100px; // 나중에 삭제
-}
-  
-.checkIcon{
+    // 작은카드
+    .item_card {
+        position: absolute;
+
+        .tit_content{
+            margin-top: 13px;
+            p{
+                height: 100%;
+                padding: 0;
+                font-size: 17px;
+                line-height: 28px;
+                display: -webkit-box;
+                overflow: hidden;
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+    
+        &.card_half{
+            width: 297px;
+            height: 192px;
+            
+            &.half1{
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+
+            &.half2{
+                position: absolute;
+                left: 333px;
+                top: 0;
+            }
+
+            &.half3{
+                position: absolute;
+                left: 0px;
+                top: 192px;
+                margin-top: 70px;
+            }
+
+            &.half4{
+                position: absolute;
+                left: 333px;
+                top: 192px;
+                margin-top: 70px;
+            }
+
+            &.info_card{
+                overflow: hidden;
+                position: absolute;
+                // top: 143px;
+                left: 0;
+                // right: 84px;
+                height: 19px;
+                // margin-top: 18px;
+                padding-left: 24px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 19px;
+               
+                &.txt_ketword{
+                    font-size : 18px;  
+                    margin-right: 3px;
+                }
+                
+
+                &.wrap_cont{
+                    height: 192px;
+                    outline-offset: -2px;
+                    display: block;
+                    position: relative;
+                    padding: 25px 24px 0px;
+                    box-sizing: border-box;
+                    text-decoration: none;
+
+                    &.info_cate{
+                        display: block;
+                        height: 36px;
+                        margin-top: -1px;
+                        padding-right: 20px;
+                        font-size: 0; 
+                    }
+                }
+            }
+        }
+
+
+        &.card_middle{
+           
+            &.wrap_cont{
+                width: 297px;
+                height: 367px;
+            }
+            .wrap_thumb{
+                display: block;
+                height: 166px;
+                margin-top: 60px;
+            }
+        
+            .cardMiddleImg{
+                display: block;
+                min-height: 100%;
+                width: 100%;
+            }
+        }  
+
+        &.middle1{
+            left: 0px; 
+            top: 480px;
+        }
+        &.middle2{
+            left: 333px;
+            top: 480px;
+           
+        }
+    }
+    
+// 공통 
+.icon{
     text-decoration: none solid rgb(51, 51, 51);
     width: 36px;
     height: 36px;
 }
 
-.info_cate{
+.info_cate {
+    height: 36px;
+    margin-top: -1px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
-    padding: 25px 24px 0;
-}
+  }
 
 .txt_cate{
     display: inline-block;
     position: relative;
+    line-height: 34px;
     margin-top: 1px;
+    padding: 0 13px;
     border-radius: 13px;
     background: none;
     font-size: 13px;
     text-decoration: none solid rgb(0, 0, 0);
-    vertical-align: text-top;
+    vertical-align: top;
     word-spacing: 0px;
+    height: 34px;
+
+    &.date{
+        height: 26px;
+        padding: 2px;
+    }
+
+
 }
 
 /* 말풍선 */
 .balloon {
     position: relative;
-    background-color: #EEEEEE;
     border-radius: 13px;
-    padding: 10px;
     margin: 10px 10px 0 10px;
     max-width: 200px; 
-  }
-  
-  .icon-container{
-    margin-left: auto;
-    color: red;
-  }
 
-.tit_card {
-    max-height: 92px;
-    height: 92px;
-    margin-top: 13px;
-    padding: 0 24px 0 24px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 46px;
-    letter-spacing: -1px;
+    &.b_check{
+        background-color: #EEEEEE;
+    }
+
+    &.b_highlight{
+        background-color: $bg-yellow2;
+     }
 }
 
-.info_card_tag {
-    margin-top: 24px;
-    // margin-bottom: 3px;
-    padding: 0 24px 0 24px;
+#list_cs {
+    margin: 12px -24px 0;
+    font-size: 0;
+    text-align: center;
+    list-style: none;
+    display: flex; 
+    justify-content: center;
+
+    .link_cs {
+        display: inline-block;
+        margin: 0 3px;
+        width: 70px;
+        background-color: #EEEEEE;
+        border-radius: 15px;
+        font-size: 16px;
+        height: 42px;
+        line-height: 42px;
+    }
 }
 
-.tag{
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 19px;
-    margin: 0 3px 0 0;
-    text-decoration: none solid rgb(102, 102, 102);
-    color: #666666;
-}
 
-.cardImg{
-    display: block;
-    width: 100%;
-    height: 100%;
 
-    margin-top: 20px;
-    object-fit: cover; 
-    // border-radius: 14px; 
-}
+
 }
