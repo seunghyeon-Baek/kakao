@@ -6,7 +6,7 @@ import { HiDotsVertical } from "react-icons/hi";
 function MainTop() {
   return (
     <div className="main" id="hyeon">
-      {/* 달력 */}
+      {/* 달력. */}
       <div className='title'>
         <div className='title_date'>
           <div className='text' >
